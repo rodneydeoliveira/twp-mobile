@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220926 23:02:12.266" rpa="false" schemaversion="3">
+<suite id="s1" name="Home" source="C:\Users\rodne\Desktop\Cursos\twp-mobile\app\home.robot">
+<test id="s1-t1" name="Deve Abrir o App" line="6">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Pixel2</arg>
+<arg>app=${EXECDIR}app\\twp.apk</arg>
+<arg>udid=emulator-5554</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220926 23:02:14.468" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220926 23:02:14.467" endtime="20220926 23:02:14.470"/>
+</kw>
+<msg timestamp="20220926 23:02:14.470" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220926 23:02:14.472" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\rodne\Desktop\Cursos\twp-mobile\appapp\twp.apk' does not exist or is not accessible
+</msg>
+<status status="FAIL" starttime="20220926 23:02:12.412" endtime="20220926 23:02:14.472"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Training Wheels Protocol Mobile Version</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20220926 23:02:14.473" endtime="20220926 23:02:14.473"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20220926 23:02:14.473" endtime="20220926 23:02:14.473"/>
+</kw>
+<status status="FAIL" starttime="20220926 23:02:12.412" endtime="20220926 23:02:14.474">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\rodne\Desktop\Cursos\twp-mobile\appapp\twp.apk' does not exist or is not accessible
+</status>
+</test>
+<status status="FAIL" starttime="20220926 23:02:12.267" endtime="20220926 23:02:14.476"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220926 23:02:14.470" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
