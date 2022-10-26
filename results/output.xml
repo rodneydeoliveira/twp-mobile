@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220928 20:05:41.651" rpa="false" schemaversion="3">
-<suite id="s1" name="Nav" source="C:\Users\rodne\Desktop\Cursos\twp-mobile\nav.robot">
-<test id="s1-t1" name="Deve Acessar a Tela Dialogs" line="6">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220928 19:59:13.889" rpa="false" schemaversion="3">
+<suite id="s1" name="Twp-Mobile" source="C:\Users\rodne\Desktop\Cursos\twp-mobile">
+<suite id="s1-s1" name="Nav" source="C:\Users\rodne\Desktop\Cursos\twp-mobile\nav.robot">
+<test id="s1-s1-t1" name="Deve Acessar a Tela Dialogs" line="6">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>automationName=UiAutomator2</arg>
@@ -15,30 +16,30 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220928 20:05:41.865" endtime="20220928 20:05:57.089"/>
+<status status="PASS" starttime="20220928 19:59:14.342" endtime="20220928 19:59:33.853"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>Training Wheels Protocol</arg>
 <arg>10</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220928 20:05:57.091" endtime="20220928 20:06:00.315"/>
+<status status="PASS" starttime="20220928 19:59:33.856" endtime="20220928 19:59:36.696"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>Mobile Version</arg>
 <arg>10</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220928 20:06:00.316" endtime="20220928 20:06:00.494"/>
+<status status="PASS" starttime="20220928 19:59:36.699" endtime="20220928 19:59:36.892"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>COMEÇAR</arg>
 <arg>10</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220928 20:06:00.496" endtime="20220928 20:06:00.630"/>
+<status status="PASS" starttime="20220928 19:59:36.894" endtime="20220928 19:59:37.092"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>COMEÇAR</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220928 20:06:00.631" endtime="20220928 20:06:01.658"/>
+<status status="PASS" starttime="20220928 19:59:37.095" endtime="20220928 19:59:38.095"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>xpath=io.qaninja.android.twp:id/toolbarTitle</arg>
@@ -46,53 +47,55 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <doc>Waits until element specified with `locator` is visible.</doc>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220928 20:06:03.482" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220928 20:06:01.773" endtime="20220928 20:06:03.483"/>
+<msg timestamp="20220928 19:59:40.899" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220928 19:59:38.369" endtime="20220928 19:59:40.907"/>
 </kw>
-<msg timestamp="20220928 20:06:03.485" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: io.qaninja.android.twp.
+<msg timestamp="20220928 19:59:40.909" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: io.qaninja.android.twp.
 </msg>
-<status status="FAIL" starttime="20220928 20:06:01.659" endtime="20220928 20:06:03.501"/>
+<status status="FAIL" starttime="20220928 19:59:38.096" endtime="20220928 19:59:40.997"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.503" endtime="20220928 20:06:03.503"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.000" endtime="20220928 19:59:41.002"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>id=io.qaninja.android.twp:id/navView</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.504" endtime="20220928 20:06:03.504"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.004" endtime="20220928 19:59:41.005"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>DIALOGS</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.505" endtime="20220928 20:06:03.505"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.005" endtime="20220928 19:59:41.006"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>id=io.qaninja.android.twp:id/toolbarTitle</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.506" endtime="20220928 20:06:03.507"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.007" endtime="20220928 19:59:41.008"/>
 </kw>
 <kw name="Element Text Should Be" library="AppiumLibrary">
 <arg>id=io.qaninja.android.twp:id/toolbarTitle</arg>
 <arg>DIALOGS</arg>
 <doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.508" endtime="20220928 20:06:03.508"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.009" endtime="20220928 19:59:41.011"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.509" endtime="20220928 20:06:03.509"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.012" endtime="20220928 19:59:41.014"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="NOT RUN" starttime="20220928 20:06:03.510" endtime="20220928 20:06:03.510"/>
+<status status="NOT RUN" starttime="20220928 19:59:41.015" endtime="20220928 19:59:41.017"/>
 </kw>
-<status status="FAIL" starttime="20220928 20:05:41.863" endtime="20220928 20:06:03.513">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: io.qaninja.android.twp.
+<status status="FAIL" starttime="20220928 19:59:14.340" endtime="20220928 19:59:41.021">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: io.qaninja.android.twp.
 </status>
 </test>
-<status status="FAIL" starttime="20220928 20:05:41.654" endtime="20220928 20:06:03.517"/>
+<status status="FAIL" starttime="20220928 19:59:13.947" endtime="20220928 19:59:41.030"/>
+</suite>
+<status status="FAIL" starttime="20220928 19:59:13.898" endtime="20220928 19:59:41.041"/>
 </suite>
 <statistics>
 <total>
@@ -101,7 +104,8 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Nav">Nav</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Twp-Mobile">Twp-Mobile</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Nav">Twp-Mobile.Nav</stat>
 </suite>
 </statistics>
 <errors>
